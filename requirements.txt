@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+uvicorn
+fastapi
+scikit-learn
+numpy
