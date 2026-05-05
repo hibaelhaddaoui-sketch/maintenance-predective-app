@@ -47,7 +47,24 @@ page = st.sidebar.radio(
         "🛠️ Recommandations"
     ]
 )
+# ================= INFORMATIONS UTILISATEUR =================
 
+st.sidebar.subheader("👤 Informations utilisateur")
+
+nom_user = st.sidebar.text_input("Nom complet")
+email_user = st.sidebar.text_input("Email")
+role_user = st.sidebar.selectbox(
+    "Rôle",
+    [
+        "Technicien maintenance",
+        "Ingénieur maintenance",
+        "Responsable production",
+        "Étudiant"
+    ]
+)
+
+if nom_user:
+    st.sidebar.success(f"Bienvenue {nom_user}")
 st.markdown('<div class="big-title">Maintenance prédictive</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Solution IA + API + application web pour la fiabilité industrielle</div>', unsafe_allow_html=True)
 st.write("")
@@ -207,3 +224,4 @@ elif page == "🛠️ Recommandations":
     except Exception as e:
         st.error("Erreur lors du chargement des recommandations.")
         st.write(e)
+            
