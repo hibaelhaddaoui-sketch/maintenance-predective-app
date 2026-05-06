@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "https://initial-min-mountain-chevy.trycloudflare.com"
+API_URL = "https://albert-accountability-below-remainder.trycloudflare.com"
 
 st.set_page_config(page_title="Maintenance IA", page_icon="⚙️", layout="wide")
 
